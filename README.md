@@ -10,7 +10,7 @@ This image contains Python support, but can be modified to include other languag
 ```bash
 docker build -t vscode-ngrok .
 ```
-Note that you can also install various extensions by modifying the `Dockerfile`.
+Note that you can also install various extensions or packages by modifying the `Dockerfile`.
 
 ## Run Docker Container
 
