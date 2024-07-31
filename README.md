@@ -1,7 +1,7 @@
 # Web-Accessible Visual Studio Code with ngrok in Docker
 
 Docker image for VSCode (Open GitPod version), web-accessible remotely with ngrok.
-This image contains Python extensions, PyTorch, and CUDA support.
+This image contains Python support, but can be modified to include other languages and frameworks.
 
 <h3 align="right">Colby T. Ford, Ph.D.</h3>
 

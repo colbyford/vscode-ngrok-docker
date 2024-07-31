@@ -3,14 +3,12 @@ FROM gitpod/openvscode-server:latest
 ## Root user to get permissions to install packages
 USER root 
 
-## Install Python3, pip3, CUDA, and other dependencies
+## Install Python3, pip3, and other dependencies
 RUN apt-get update && \
     apt-get install -y \
         ## Python3
         python3 \
         python3-pip \
-        ## CUDA
-        nvidia-cuda-toolkit \
         ## Other dependencies
         sudo \
         curl \
@@ -18,10 +16,7 @@ RUN apt-get update && \
         wget \
         unzip && \ 
         apt-get clean
-
-## Install PyTorch
-RUN python3 -m pip install torch torchvision torchaudio
-
+        
 ## Install ngrok
 RUN curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | \
         sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && \
